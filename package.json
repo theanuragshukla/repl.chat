@@ -16,6 +16,7 @@
   "bugs": {
     "url": "https://github.com/theanuragshukla/repl.chat/issues"
   },
+	"bin": "start",
   "homepage": "https://github.com/theanuragshukla/repl.chat#readme",
   "dependencies": {
     "chalk": "^4.1.2",

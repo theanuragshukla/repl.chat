@@ -1,7 +1,9 @@
+#!/usr/bin/env -S nodemon -q
+
 const url = 'https://nodereplchat.herokuapp.com/'
 const chalk = require('chalk');
-const user = process.argv[2]
-const room = process.argv[3]
+const user = process.argv[2] || "user"
+const room = process.argv[3] || "global"
 const figlet = require('figlet')
 const rl = require('readline')
 const io = require('socket.io-client')
