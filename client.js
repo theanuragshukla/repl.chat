@@ -1,4 +1,4 @@
-#!/usr/bin/env -S nodemon -q
+#!/usr/bin/env -S nodemon -q --ignore '*'
 
 const url = 'https://nodereplchat.herokuapp.com/'
 const chalk = require('chalk');

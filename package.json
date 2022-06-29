@@ -1,28 +1,28 @@
 {
-  "name": "repl.chat",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/theanuragshukla/repl.chat.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/theanuragshukla/repl.chat/issues"
-  },
-	"bin": "start",
-  "homepage": "https://github.com/theanuragshukla/repl.chat#readme",
-  "dependencies": {
-    "chalk": "^4.1.2",
-    "express": "^4.18.1",
-    "figlet": "^1.5.2",
-    "readline": "^1.3.0",
-    "socket.io-client": "^4.5.1"
-  }
+	"name": "repl.chat",
+	"version": "1.0.03",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/theanuragshukla/repl.chat.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/theanuragshukla/repl.chat/issues"
+	},
+	"bin": "client.js",
+	"homepage": "https://github.com/theanuragshukla/repl.chat#readme",
+	"dependencies": {
+		"chalk": "^4.1.2",
+		"express": "^4.18.1",
+		"figlet": "^1.5.2",
+		"readline": "^1.3.0",
+		"socket.io-client": "^4.5.1"
+	}
 }
