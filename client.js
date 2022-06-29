@@ -1,9 +1,8 @@
 #!/usr/bin/env -S nodemon -q --ignore '*'
-
 const url = 'https://nodereplchat.herokuapp.com/'
 const chalk = require('chalk');
-const user = process.argv[2] || "user"
-const room = process.argv[3] || "global"
+const user = process.argv[2]
+const room = process.argv[3]
 const figlet = require('figlet')
 const rl = require('readline')
 const io = require('socket.io-client')
@@ -70,6 +69,7 @@ const printIncoming =async (msg,usr,clr,uid)=>{
 	inpMsg('# ',printMsg)
 }
 const startup = async()=>{
+console.clear()
 	figlet("REPL CHAT",async (err,data)=>{
 		console.log(chalk.red(data))
 		logo=true
@@ -102,4 +102,12 @@ const startup = async()=>{
 		})
 	})
 }
-startup()	
+if(room==null || room==undefined){
+	console.log(`${chalk.red("\n\nPlease provide username and room in following format: \n\n")}${chalk.yellow("	repl.chat [username] [room]")}${chalk.green("\n\n	press ctrl+c to exit\n")}`)
+	process.kill(process.pid)
+	process.exit()
+}else{
+	startup()	
+}
+
+
