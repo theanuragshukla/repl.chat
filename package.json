@@ -1,6 +1,6 @@
 {
 	"name": "repl.chat",
-	"version": "1.0.05",
+	"version": "1.0.06",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
@@ -22,7 +22,6 @@
 		"chalk": "^4.1.2",
 		"express": "^4.18.1",
 		"figlet": "^1.5.2",
-		"nodemon": "^2.0.18",
 		"readline": "^1.3.0",
 		"socket.io-client": "^4.5.1"
 	}
