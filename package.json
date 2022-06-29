@@ -1,6 +1,6 @@
 {
 	"name": "repl.chat",
-	"version": "1.0.04",
+	"version": "1.0.05",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
